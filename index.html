@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pl" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>BatHost.pl</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/headers/"
+    />
+    <script src="assets/js/color-modes.js"></script>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="theme-color" content="#712cf9" />
+    <link href="headers.css" rel="stylesheet" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	.b-example-divider {
+	  width: 100%;
+	  height: 500px;
+	  background-image: url('background.jpg');
+	  background-size: cover;
+	  background-position: center;
+	  border: none;
+	  
+	  box-shadow: inset 0 20px 20px -10px rgba(0, 0, 0, 0.8), 
+				  inset 0 -20px 20px -10px rgba(0, 0, 0, 0.8);
+	}
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+      <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+            >
+              <svg
+                class="bi me-2"
+                width="40"
+                height="32"
+                role="img"
+                aria-label="Bootstrap"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+			  <a href="#"><img src="BatHost.jpg" width="40" style="border-radius: 10px;"></a>
+              <li><a href="#onas" class="nav-link px-2 text-white">O nas</a></li>
+              <li><a href="#cennik" class="nav-link px-2 text-white">Oferta</a></li>
+              <li><a href="#faq" class="nav-link px-2 text-white">FAQ</a></li>
+              <li><a href="discord" class="nav-link px-2 text-white">Discord</a></li>
+            </ul>
+            <div class="text-end">
+              <a href="https://panel.bathost.pl"><button type="button" class="btn btn-primary">Panel Klienta</button></a>
+            </div>
+          </div>
+        </div>
+      </header>
+		<div class="b-example-divider">
+		  <div style="height: 500px; background-color: rgba(0, 0, 0, 0.5);">
+			<h1 class="animate__animated animate__fadeInDown" style="position: relative; top: 150px; text-align: center; color: white;font-size: 100px;">BatHost</h1>
+			<h2 class="animate__animated animate__fadeInUp" style="position: relative; top: 150px; text-align: center; color: lightgray;font-size: 20px;">Hosting pasjonata, gdzie liczy się zadowolenie klientów niż zysk</h2>
+			<a href="discord"><div class="animate__animated animate__bounceInUp" style="text-align: center; position: relative; top: 190px;"><button type="button" class="btn btn-primary">Kup teraz</button></div></a>
+		  </div>
+		</div>
+	  </div>
+	  <main>
+	  <div id="onas">
+		<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+			<div class="alert animate__animated animate__slideInLeft" style="font-size:80px;text-align:center;">O nas</div>
+		</div>
+		<h1 class="card animate__animated animate__zoomIn" style="text-align:center;border:0px;">Jesteśmy początkującym hostingiem, który jest amatorski,<br>dlatego oferujemy niższą cene niż inni, nasz team składa się narazie tylko z jednej osoby</h1>
+	  </div>
+	  <div id="cennik">
+	     
+ 
+    <div class="container py-3">
+      <header>
+        <div
+          class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"
+        >
+
+
+        </div>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <div class="alert animate__animated animate__slideInLeft" style="font-size:80px;text-align:center;">Oferta</div>
+        </div>
+      </header>
+      <main>
+	  <div class="card animate__animated animate__zoomIn" style="border:0px;">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Pakiet Beta 1</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  2,50* zł<small class="text-body-secondary fw-light">/miesiąc</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>2 vCPU</li>
+                  <li>4 GB RAM DDR4</li>
+				  <li>10 GB SSD</li>
+                  <li>Support na Discordzie</li>
+                </ul>
+                <a href="discord"><button type="button" class="w-100 btn btn-lg btn-primary">
+                  Kup teraz
+                </button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Pakiet Beta 2</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  5* zł<small class="text-body-secondary fw-light">/miesiąc</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>4 vCPU</li>
+                  <li>8 GB RAM DDR4</li>
+				  <li>20 GB Dysk SSD</li>
+                  <li>Support na Discordzie</li>
+                </ul>
+                <a href="discord"><button type="button" class="w-100 btn btn-lg btn-primary">
+                  Kup teraz
+                </button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Custom</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  ?? zł<small class="text-body-secondary fw-light">/miesiąc</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>? vCPU</li>
+                  <li>? GB RAM DDR4</li>
+				  <li>? GB Dysk SSD</li>
+                  <li>Support na Discordzie</li>
+                </ul>
+                <a href="discord"><button type="button" class="w-100 btn btn-lg btn-primary">
+                  Skontaktuj się
+                </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive">
+        </div>
+		<p>*oferta tymczasowa dla 10 pierwszych użytkowników, cena jest taka przez 3 miesiące</p>
+	</div>
+				<div
+          class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"
+        ></div>
+		<div id="faq">
+			<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+				<div class="alert animate__animated animate__slideInLeft" style="font-size:80px;text-align:center;">FAQ</div>
+			</div>
+			<div class="card animate__animated animate__zoomIn" style="border:0px;">
+				<p>1. Czemu nie pisze jaki to jest Procesor?</p>
+				<p style="margin-left:50px;">Możliwe, że będę zmieniał jeżeli będzie większe zaangażowanie</p>
+				<p>2. Jak zamówić serwer?</p>
+				<p style="margin-left:50px;">Zamówić możesz u nas na discordzie</p>
+				<b>Chcesz dodać jakieś pytanie? Zapytaj nas na discordzie</b>
+			</div>
+		</div>
+      </main>
+<footer class="pt-4 my-md-5 pt-md-5 border-top" style="text-align:center;">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img
+              class="mb-2"
+              src="BatHost.jpg"
+              alt=""
+              width="50"
+			  style="border-radius:10px;"
+            />
+            <small class="d-block mb-3 text-body-secondary"
+              >&copy; 2017–2025</small
+            >
+          </div>
+        </div>
+	  </div>
+	  </div>
+    <script
+      src="assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+  </body>
+</html>
